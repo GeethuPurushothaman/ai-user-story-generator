@@ -4,7 +4,9 @@ from openai import OpenAI
 import os
 
 # Initialize OpenAI client
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+#client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.title("AI User Story Generator")
 
