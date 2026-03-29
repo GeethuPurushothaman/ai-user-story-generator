@@ -6,6 +6,7 @@ import os
 # Test Changes 1234
 #client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+#keeping what is needed
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.title("AI User Story Generator")
