@@ -3,7 +3,8 @@ import pandas as pd
 from openai import OpenAI
 import os
 
-#keeping what is needed
+#Secret key for Streamlit 
+#client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.title("AI User Story Generator")
